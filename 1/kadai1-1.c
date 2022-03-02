@@ -10,4 +10,6 @@ int main(){
 	printf("double x: %p\n", &x);
 	printf("float  y: %p\n", &y);
 	printf("float  z: %p\n", &z);
+
+	return 0;
 }
