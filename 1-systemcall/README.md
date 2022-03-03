@@ -15,3 +15,6 @@
 ## kadai1-4
 - `./a.out 2> error.txt`
 - bash
+
+## kadai1-5
+- 1021
