@@ -18,3 +18,7 @@
 
 ## kadai1-5
 - 1021
+
+## kadai1-6
+- `ulimit -Sn` -> 1024
+- stdin, stdout, stderrとあわせて1024になる
