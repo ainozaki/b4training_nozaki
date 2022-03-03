@@ -11,3 +11,7 @@
 ## kadai1-3
 - `open("foo.txt", O_CREAT | O_EXCL, 0644)`  
 - umaskは022(8)とした
+
+## kadai1-4
+- `./a.out 2> error.txt`
+- bash
