@@ -24,12 +24,12 @@ int main(int argc, char *argv[]) {
   // Read
   char c;
   int len;
-	printf("%d: ", lines);
+  printf("%d: ", lines);
   while ((len = read(fd, &c, sizeof(c))) > 0) {
-		putchar(c);
+    putchar(c);
     if (c == '\n') {
       lines++;
-			printf("%d: ", lines);
+      printf("%d: ", lines);
     }
   }
 

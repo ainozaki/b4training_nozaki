@@ -111,3 +111,8 @@ read(fd, p, sizeof(p));
 ## kadai1-18
 - `kadai1-18.c`に記載
 - 1文字ずつread, writeし、`\n`であったらカウントしている行数も標準出力する
+
+## kadai1-19
+- `kadai1-18.c`に記載
+- `struct line_info`を用意し、行末のoffsetをdouble linked listに記録。
+- douvle linked listをtailから読み込み、offsetを動かすことで最終行から出力する
