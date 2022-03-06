@@ -134,3 +134,16 @@ p2: x = 1
 
 ## kadai1-22
 - 終了ステータスは`$?`で取得できる
+
+## kadai1-23
+```
+aino@~/Projects/b4-training-nozaki/1-systemcall$ echo $$
+4793
+aino@~/Projects/b4-training-nozaki/1-systemcall$ ./a.out
+[9713]: parent = 4793
+	waiting for the child...
+[9714]: parent = 9713
+	sleeping for a while...
+[9714]: child exits with␣33
+[9713]: child (9714) returns 33
+```
