@@ -101,3 +101,9 @@ read(fd, p, sizeof(p));
 
 ## kadai1-16
 - `kadai1-16.c`に記載
+- 1文字ずつreadし, その直後にwriteする
+
+
+## kadai1-17
+- `kadai1-17.c`に記載
+- `\n`の数を記録する
