@@ -150,3 +150,6 @@ aino@~/Projects/b4-training-nozaki/1-systemcall$ ./a.out
 
 ## kadai1-24
 - `kadai1-24.c`に記載
+
+## kadai1-26
+- `ps -A`と全プロセスを表示させると子プロセスのpidを持つプロセスが存在することを確認した
