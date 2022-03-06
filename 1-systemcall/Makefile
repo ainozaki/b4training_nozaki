@@ -14,7 +14,8 @@ SRC := kadai1-1.c \
 			 kadai1-20.c \
 			 kadai1-21.c \
 			 kadai1-22.c \
-			 kadai1-23.c
+			 kadai1-23.c \
+			 kadai1-24.c
 
 format:
 	clang-format -i $(SRC)

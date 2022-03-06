@@ -147,3 +147,6 @@ aino@~/Projects/b4-training-nozaki/1-systemcall$ ./a.out
 [9714]: child exits with␣33
 [9713]: child (9714) returns 33
 ```
+
+## kadai1-24
+- `kadai1-24.c`に記載
