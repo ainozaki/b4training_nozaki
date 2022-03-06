@@ -107,3 +107,7 @@ read(fd, p, sizeof(p));
 ## kadai1-17
 - `kadai1-17.c`に記載
 - `\n`の数を記録する
+
+## kadai1-18
+- `kadai1-18.c`に記載
+- 1文字ずつread, writeし、`\n`であったらカウントしている行数も標準出力する
