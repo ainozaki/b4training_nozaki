@@ -6,11 +6,13 @@ int *p;
 short b[10];
 short *q;
 
-void init_array(int a[]){
-	for (int i = 0; i < sizeof(a)/sizeof(int); i++){
-		a[i] = i;
-	}
+/*
+void init_array(int a[]) {
+  for (int i = 0; i < sizeof(a) / sizeof(int); i++) {
+    a[i] = i;
+  }
 }
+*/
 
 int main() {
   int i;
@@ -18,9 +20,9 @@ int main() {
     a[i] = i;
   }
 
-	printf(" a    = %p\n", a);
-	printf(" a[0] = %d\n", a[0]);
-	printf("&a[0] = %p\n", &a[0]);
+  printf(" a    = %p\n", a);
+  printf(" a[0] = %d\n", a[0]);
+  printf("&a[0] = %p\n", &a[0]);
 
   printf("\n");
   p = a;
@@ -33,7 +35,7 @@ int main() {
 
   printf("\n");
 
-	// short
+  // short
   for (i = 0; i < sizeof(b) / sizeof(short); i++) {
     b[i] = i;
   }
@@ -45,12 +47,12 @@ int main() {
   printf("*q = %11d |  b[5] = %11d | *(b+5) = %11d\n", *q, b[5], *(b + 5));
   printf(" q = %p | &b[5] = %p |  (b+5) = %p\n", q, &b[5], (b + 5));
 
-	// write a[10]
-	//a[10] = 10;
+  // write a[10]
+  // a[10] = 10;
 
-	// sizeof
+  // sizeof
   printf("\n");
-	printf("sizeof(a)  :%lu\n", sizeof(a));
-	printf("sizeof(int):%lu\n", sizeof(int));
+  printf("sizeof(a)  :%lu\n", sizeof(a));
+  printf("sizeof(int):%lu\n", sizeof(int));
   return 0;
 }

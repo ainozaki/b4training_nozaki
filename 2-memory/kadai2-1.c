@@ -5,11 +5,11 @@ double x;
 float y;
 float z;
 
-int main(){
-	printf("double w: %p\n", &w);
-	printf("double x: %p\n", &x);
-	printf("float  y: %p\n", &y);
-	printf("float  z: %p\n", &z);
+int main() {
+  printf("double w: %p\n", &w);
+  printf("double x: %p\n", &x);
+  printf("float  y: %p\n", &y);
+  printf("float  z: %p\n", &z);
 
-	return 0;
+  return 0;
 }
