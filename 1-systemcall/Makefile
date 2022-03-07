@@ -17,7 +17,9 @@ SRC := kadai1-1.c \
 			 kadai1-23.c \
 			 kadai1-24.c \
 			 kadai1-26.c \
-			 kadai1-27.c
+			 kadai1-27.c \
+			 kadai1-28-use-fd.c \
+			 kadai1-28-open-fd.c
 
 format:
 	clang-format -i $(SRC)
