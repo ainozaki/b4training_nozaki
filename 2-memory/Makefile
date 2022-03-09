@@ -6,7 +6,8 @@ SRC := kadai2-1.c \
 			 kadai2-6.c \
 			 kadai2-7.c \
 			 kadai2-8.c \
-			 kadai2-9.c
+			 kadai2-9.c \
+			 kadai2-10.c
 
 all: $(SRC:.c=.o)
 

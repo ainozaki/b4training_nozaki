@@ -103,3 +103,14 @@ str2: Finep4�U#
 ```
 - x, y, str1, str2は連続してメモリ上に割り当てられた変数で、x, yは4byte、str1, str2はポインタ型で64bitである。&x, &y, &str1, &str2の結果からその間隔が確認できる。
 - str1, str2はポインタはそれぞれx, yを指す。str1, str2の結果と&x, &yの結果が一致していることから確認できる。
+
+### kadai2-10
+```
+sizeof(double) = 8, sizeof(bar) = 24
+&bar = 0x55a0f3ab5020
+&bar.a = 0x55a0f3ab5020
+&bar.b = 0x55a0f3ab5024
+&bar.c = 0x55a0f3ab5028
+&bar.d = 0x55a0f3ab5030
+```
+- アライメント規約によりdouble型のdが8バイト境界に配置されるため、cのパディングが7byte取られている。
