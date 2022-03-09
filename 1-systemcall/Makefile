@@ -19,12 +19,18 @@ SRC := kadai1-1.c \
 			 kadai1-26.c \
 			 kadai1-27.c \
 			 kadai1-28-use-fd.c \
-			 kadai1-28-open-fd.c
+			 kadai1-28-open-fd.c \
+			 kadai1-29.c
+
+all: $(SRC:.c=.o)
+
+%.o: %.c
+	gcc -o $@ $<
 
 format:
 	clang-format -i $(SRC)
 
 clean:
-	rm -f *.txt a.out
+	rm -f *.txt a.out *.o
 
 .PHONY: format clean

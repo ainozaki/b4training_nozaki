@@ -7,7 +7,7 @@ int main() {
 
   // Change value
   // Error
-  *a = 'x';
+  // *a = 'x';
   // Change pointer
   // Ok
   a += 1;
@@ -17,14 +17,14 @@ int main() {
   *b = 'x';
   // Change pointer
   // Error
-  b += 1;
+  // b += 1;
 
   // Change value
   // Error
-  *c = 'x';
+  // *c = 'x';
   // Change pointer
   // Error
-  c += 1;
+  // c += 1;
 
   return 0;
 }

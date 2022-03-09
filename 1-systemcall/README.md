@@ -157,6 +157,10 @@ aino@~/Projects/b4-training-nozaki/1-systemcall$ ./a.out
 ## kadai1-27
 - `kadai1-27.c`に記載
 
-## kadai1-27
+## kadai1-28
 - `kadai1-28-use-fd.c`, `kadai1-28-open-fd.c`に記載
 - execve実行前にopenしたファイル記述子を用いて、execve先でreadできることを確認した
+
+## kadai1-29
+- SIGSEGVを送信したところ`Segmentation fault (core dumped)`と表示された
+
