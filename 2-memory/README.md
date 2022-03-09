@@ -117,3 +117,14 @@ sizeof(double) = 8, sizeof(bar) = 24
 
 ### kadai2-11
 - アライメント規約によりパディングが取られると、その隙間の部分の値は0に初期化されるとは限らない。memcmp()を利用するとメンバ以外のパディングの部分も比較するため、正しい結果が得られない。
+
+### kadai2-12
+```
+sizeof(double) = 8, sizeof(bar) = 14
+&bar = 0x55a2f0fe1018
+&bar.a = 0x55a2f0fe1018
+&bar.b = 0x55a2f0fe1019
+&bar.c = 0x55a2f0fe101d
+&bar.d = 0x55a2f0fe101e
+```
+- パディング無くメンバが詰められるオプション。
