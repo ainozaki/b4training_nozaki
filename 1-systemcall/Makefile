@@ -23,7 +23,8 @@ SRC := kadai1-1.c \
 			 kadai1-29.c \
 			 kadai1-30.c \
 			 kadai1-32.c \
-			 kadai1-33.c
+			 kadai1-33.c \
+			 kadai1-34.c
 
 all: $(SRC:.c=.o)
 
