@@ -164,3 +164,8 @@ aino@~/Projects/b4-training-nozaki/1-systemcall$ ./a.out
 ## kadai1-29
 - SIGSEGVを送信したところ`Segmentation fault (core dumped)`と表示された
 
+## kadai1-30
+- SIGINTをcatchするシグナルハンドラを登録しているため、Ctrl-Cを押した時もデフォルトのハンドラーであるプロセスの停止は起こらない。
+
+## kadai1-31
+- `kill -SIGKILL <pid>`
