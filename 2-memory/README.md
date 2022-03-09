@@ -139,3 +139,12 @@ char: sizeof(long long)=8, alignof(long long)=8
 char:     sizeof(float)=4,     alignof(float)=4
 char:    sizeof(double)=8,    alignof(double)=8
 ```
+
+### kadai2-14
+```
+struct ColoredPoint {
+	struct Point point;
+	int color;
+};
+```
+- ColoredPointでメンバとしてPointを持たせる
