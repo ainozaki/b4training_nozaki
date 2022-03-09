@@ -128,3 +128,14 @@ sizeof(double) = 8, sizeof(bar) = 14
 &bar.d = 0x55a2f0fe101e
 ```
 - パディング無くメンバが詰められるオプション。
+
+### kadai2-13
+```
+char:      sizeof(char)=1,      alignof(char)=1
+char:     sizeof(short)=2,     alignof(short)=2
+char:       sizeof(int)=4,       alignof(int)=4
+char:      sizeof(long)=8,      alignof(long)=8
+char: sizeof(long long)=8, alignof(long long)=8
+char:     sizeof(float)=4,     alignof(float)=4
+char:    sizeof(double)=8,    alignof(double)=8
+```
