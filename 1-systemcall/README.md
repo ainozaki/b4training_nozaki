@@ -169,3 +169,54 @@ aino@~/Projects/b4-training-nozaki/1-systemcall$ ./a.out
 
 ## kadai1-31
 - `kill -SIGKILL <pid>`
+
+## kadai1-32
+- signal handlerの中でsleepを挟んでいるが、その間に複数のSIGCHLDが送られている。
+- シグナルは個数はカウントせずフラグのみで管理しているので、複数回送られているが、シグナルは1度しか送信されず、回収できない子プロセスが生じている。
+```
+Child exit
+Child exit
+Child exit
+Child exit
+Catch SIGCHLD
+Child exit
+Catch SIGCHLD
+Child exit
+Child exit
+Child exit
+Catch SIGCHLD
+Child exit
+Child exit
+Catch SIGCHLD
+```
+
+## kadai1-33
+- シグナルを受け取る回数が10より少ないことは1-32と変わらないが、waitpidが返り値が0になるまで繰り返し実行しているため、waitpidがちょうど10回呼ばれるようになった
+```
+Child exit
+Catch SIGCHLD
+waitpid
+Child exit
+Child exit
+Child exit
+Catch SIGCHLD
+waitpid
+waitpid
+waitpid
+Child exit
+Child exit
+Child exit
+Catch SIGCHLD
+waitpid
+Child exit
+Catch SIGCHLD
+waitpid
+waitpid
+waitpid
+Child exit
+Child exit
+Catch SIGCHLD
+waitpid
+waitpid
+Catch SIGCHLD
+```

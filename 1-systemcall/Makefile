@@ -21,7 +21,9 @@ SRC := kadai1-1.c \
 			 kadai1-28-use-fd.c \
 			 kadai1-28-open-fd.c \
 			 kadai1-29.c \
-			 kadai1-30.c
+			 kadai1-30.c \
+			 kadai1-32.c \
+			 kadai1-33.c
 
 all: $(SRC:.c=.o)
 
